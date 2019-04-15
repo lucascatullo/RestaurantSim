@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Resto Cliente</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_elementos_carta">elementos_carta</string>
+    <string name="title_activity_ingresar">ingresarActivity</string>
+    <string name="facebook_app_id">507612729772344</string>
+    <string name="fb_login_protocol_scheme">fb507612729772344</string>
+</resources>

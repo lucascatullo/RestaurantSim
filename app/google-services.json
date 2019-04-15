@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1042032597407",
+    "firebase_url": "https://restos-6cdda.firebaseio.com",
+    "project_id": "restos-6cdda",
+    "storage_bucket": "restos-6cdda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042032597407:android:086d88410de653ff",
+        "android_client_info": {
+          "package_name": "com.yoyoempresa.restocliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042032597407-sahnjpvbmjtgag8vlepjpvuuqthnum8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yoyoempresa.restocliente",
+            "certificate_hash": "72936402877e732e952601194a9622ecb33ce976"
+          }
+        },
+        {
+          "client_id": "1042032597407-07j2eqebgc9nt7p1s77fh6bvg61ebium.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcdKTxarhMPEmCV6UEi0jh0z5jhQ2o9ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042032597407-07j2eqebgc9nt7p1s77fh6bvg61ebium.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

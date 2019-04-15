@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bordes_redondoslistafondonanco">
+
+    <TextView
+        android:id="@+id/tv_compra"
+        android:layout_width="123dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/kionaregular"
+        android:gravity="bottom"
+        android:text="Unidades"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_compras_cantidad"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bordes_redondos"
+        android:ems="10"
+        android:fontFamily="@font/kionaregular"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textColorHint="@color/browser_actions_bg_grey"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_compra" />
+
+    <EditText
+        android:id="@+id/et_compras_extras"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bordes_redondos"
+        android:ems="10"
+        android:fontFamily="@font/kionaregular"
+        android:hint="Comentario"
+        android:inputType="textPersonName"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textColorHint="@color/browser_actions_bg_grey"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_compras_cantidad" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/campanita" />
+
+</android.support.constraint.ConstraintLayout>

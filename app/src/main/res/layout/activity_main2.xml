@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline152"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline156"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline158"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline157"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline155"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline153"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline154"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/kionaregular"
+        android:text="Su ubicacion actual es: "
+        app:layout_constraintBottom_toTopOf="@+id/guideline152"
+        app:layout_constraintEnd_toStartOf="@+id/guideline153"
+        app:layout_constraintStart_toStartOf="@+id/guideline154"
+        app:layout_constraintTop_toTopOf="@+id/guideline155" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes_redondos"
+        android:fontFamily="@font/kionaregular"
+        android:onClick="IniciarHome"
+        android:text="Ingresar"
+        android:textColor="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline157"
+        app:layout_constraintEnd_toStartOf="@+id/guideline153"
+        app:layout_constraintStart_toStartOf="@+id/guideline154"
+        app:layout_constraintTop_toTopOf="@+id/guideline156" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes_redondos"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/kionaregular"
+        android:text=""
+        android:textColor="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline158"
+        app:layout_constraintEnd_toStartOf="@+id/guideline153"
+        app:layout_constraintStart_toStartOf="@+id/guideline154"
+        app:layout_constraintTop_toTopOf="@+id/guideline152" />
+
+</android.support.constraint.ConstraintLayout>
