@@ -17,7 +17,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Collections;
 import java.util.List;
@@ -55,7 +54,7 @@ public class ActividadIngresar extends AppCompatActivity {
                     if (!task.isSuccessful()) {
                         Toast.makeText(ActividadIngresar.this,task.getException().toString(), Toast.LENGTH_SHORT).show();
                     }else{
-                        Intent i = new Intent(ActividadIngresar.this,Main2Activity.class);
+                        Intent i = new Intent(ActividadIngresar.this, Mapa_ingreso.class);
                         startActivity(i);
                     }
                 }
@@ -81,7 +80,7 @@ public class ActividadIngresar extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Adress.setCurrentUser();
                 a = true;
-                Intent i = new Intent(this, Main2Activity.class);
+                Intent i = new Intent(this, Mapa_ingreso.class);
                 startActivity(i);
             }else {
                 final AlertDialog.Builder builder = new AlertDialog.Builder(ActividadIngresar.this);

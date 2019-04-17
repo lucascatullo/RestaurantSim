@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter> </activity>
 
-        <activity android:name=".Main2Activity"
+        <activity android:name=".Mapa_ingreso"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="nosensor">
 

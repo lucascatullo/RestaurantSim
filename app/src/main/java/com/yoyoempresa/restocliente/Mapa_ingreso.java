@@ -2,7 +2,6 @@ package com.yoyoempresa.restocliente;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Geocoder;
@@ -11,12 +10,9 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -30,7 +26,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.util.Locale;
 
-public class Main2Activity extends FragmentActivity implements OnMapReadyCallback {
+public class Mapa_ingreso extends FragmentActivity implements OnMapReadyCallback {
 
     MapFragment mapFragment;
     LocationManager locationManager;
@@ -40,7 +36,7 @@ public class Main2Activity extends FragmentActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_mapa_ingreso);
         mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map1);
         mapFragment.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -50,13 +46,6 @@ public class Main2Activity extends FragmentActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(final GoogleMap googleMap) {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
@@ -93,12 +82,10 @@ public class Main2Activity extends FragmentActivity implements OnMapReadyCallbac
             }
 
         }else{
-            AlertDialog.Builder builder = new AlertDialog.Builder(Main2Activity.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(Mapa_ingreso.this);
             builder.setMessage("La casilla de ubicacion no debe estar vacia")
                     .setPositiveButton("Aceptar", null).show();
         }
-        Intent i = new Intent(this, HomeActivity.class);
-        startActivity(i);
     }
 
 
@@ -113,7 +100,6 @@ public class Main2Activity extends FragmentActivity implements OnMapReadyCallbac
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return adress;
     }
 
